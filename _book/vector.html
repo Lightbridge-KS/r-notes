@@ -168,11 +168,12 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#atomic-vectors" class="nav-link active" data-scroll-target="#atomic-vectors"> <span class="header-section-number">1.1</span> Atomic Vectors</a>
+<li><a href="#overview" class="nav-link active" data-scroll-target="#overview"> <span class="header-section-number">1.1</span> Overview</a></li>
+<li><a href="#atomic-vectors" class="nav-link" data-scroll-target="#atomic-vectors"> <span class="header-section-number">1.2</span> Atomic Vectors</a>
 <ul class="collapse">
-<li><a href="#scalar" class="nav-link" data-scroll-target="#scalar"> <span class="header-section-number">1.1.1</span> Scalar</a></li>
-<li><a href="#longer-vector" class="nav-link" data-scroll-target="#longer-vector"> <span class="header-section-number">1.1.2</span> Longer Vector</a></li>
-<li><a href="#missing-value" class="nav-link" data-scroll-target="#missing-value"> <span class="header-section-number">1.1.3</span> Missing Value</a></li>
+<li><a href="#scalar" class="nav-link" data-scroll-target="#scalar"> <span class="header-section-number">1.2.1</span> Scalar</a></li>
+<li><a href="#longer-vector" class="nav-link" data-scroll-target="#longer-vector"> <span class="header-section-number">1.2.2</span> Longer Vector</a></li>
+<li><a href="#missing-value" class="nav-link" data-scroll-target="#missing-value"> <span class="header-section-number">1.2.3</span> Missing Value</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -183,15 +184,28 @@
 
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vector</span></h1></div></header>
 
-<section id="atomic-vectors" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="atomic-vectors"><span class="header-section-number">1.1</span> Atomic Vectors</h2>
+<section id="overview" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1</span> Overview</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-vector" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="diagrams/vector.drawio.svg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 1.1: Type of vectors</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="atomic-vectors" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="atomic-vectors"><span class="header-section-number">1.2</span> Atomic Vectors</h2>
 <ul>
 <li>logical</li>
 <li>numeric: integer, double</li>
 <li>character</li>
 </ul>
-<section id="scalar" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="scalar"><span class="header-section-number">1.1.1</span> Scalar</h3>
+<section id="scalar" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="scalar"><span class="header-section-number">1.2.1</span> Scalar</h3>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lgl_var <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>int_var <span class="ot">&lt;-</span> <span class="fu">c</span>(1L, 6L, 10L)</span>
@@ -209,15 +223,15 @@
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] "character"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="longer-vector" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="longer-vector"><span class="header-section-number">1.1.2</span> Longer Vector</h3>
+<section id="longer-vector" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="longer-vector"><span class="header-section-number">1.2.2</span> Longer Vector</h3>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 1 2 3 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="missing-value" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="missing-value"><span class="header-section-number">1.1.3</span> Missing Value</h3>
+<section id="missing-value" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="missing-value"><span class="header-section-number">1.2.3</span> Missing Value</h3>
 <p><code>NA</code> will propagate except</p>
 <div class="cell">
 <div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cn">NA</span> <span class="sc">^</span> <span class="dv">0</span></span>

@@ -4,6 +4,14 @@
 source("_common.R")
 ```
 
+## Overview
+
+```{r fig-vector, echo=FALSE, out.width='80%'}
+#| fig-cap: Type of vectors
+knitr::include_graphics("diagrams/vector.drawio.svg")
+```
+
+
 ## Atomic Vectors
 
 -   logical
@@ -43,4 +51,6 @@ NA | TRUE
 
 NA & FALSE
 ```
+
+
 

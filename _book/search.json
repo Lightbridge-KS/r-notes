@@ -11,6 +11,13 @@
     "href": "vector.html",
     "title": "1  Vector",
     "section": "",
-    "text": "logical\nnumeric: integer, double\ncharacter\n\n\n\n\nlgl_var <- c(TRUE, FALSE)\nint_var <- c(1L, 6L, 10L)\ndbl_var <- c(1, 2.5, 4.5)\nchr_var <- c(\"these are\", \"some strings\")\n\n\ntypeof(lgl_var)\n#> [1] \"logical\"\ntypeof(int_var)\n#> [1] \"integer\"\ntypeof(dbl_var)\n#> [1] \"double\"\ntypeof(chr_var)\n#> [1] \"character\"\n\n\n\n\n\nc(c(1, 2), c(3, 4))\n#> [1] 1 2 3 4\n\n\n\n\nNA will propagate except\n\nNA ^ 0\n#> [1] 1\n\nNA | TRUE\n#> [1] TRUE\n\nNA & FALSE\n#> [1] FALSE"
+    "text": "Figure 1.1: Type of vectors"
+  },
+  {
+    "objectID": "vector.html#atomic-vectors",
+    "href": "vector.html#atomic-vectors",
+    "title": "1  Vector",
+    "section": "1.2 Atomic Vectors",
+    "text": "1.2 Atomic Vectors\n\nlogical\nnumeric: integer, double\ncharacter\n\n\n1.2.1 Scalar\n\nlgl_var <- c(TRUE, FALSE)\nint_var <- c(1L, 6L, 10L)\ndbl_var <- c(1, 2.5, 4.5)\nchr_var <- c(\"these are\", \"some strings\")\n\n\ntypeof(lgl_var)\n#> [1] \"logical\"\ntypeof(int_var)\n#> [1] \"integer\"\ntypeof(dbl_var)\n#> [1] \"double\"\ntypeof(chr_var)\n#> [1] \"character\"\n\n\n\n1.2.2 Longer Vector\n\nc(c(1, 2), c(3, 4))\n#> [1] 1 2 3 4\n\n\n\n1.2.3 Missing Value\nNA will propagate except\n\nNA ^ 0\n#> [1] 1\n\nNA | TRUE\n#> [1] TRUE\n\nNA & FALSE\n#> [1] FALSE"
   }
 ]
