@@ -4,14 +4,21 @@
     "href": "index.html",
     "title": "R Notes",
     "section": "",
-    "text": "About\n\n\n\nThis is my notes on R programming.\n\n\n\n\n\nAdvanced R Book\nR Manuals\nHands-On Programming with R\n\nLast updated: 2022-04-08"
+    "text": "About\n\n\n\nThis is my notes on R programming.\n\n\n\n\n\nAdvanced R Book\nR Manuals\nHands-On Programming with R"
   },
   {
     "objectID": "vector.html",
     "href": "vector.html",
     "title": "1  Vector",
     "section": "",
-    "text": "Figure 1.1: Type of vectors"
+    "text": "Last updated: 2022-04-08"
+  },
+  {
+    "objectID": "vector.html#overview",
+    "href": "vector.html#overview",
+    "title": "1  Vector",
+    "section": "1.1 Overview",
+    "text": "1.1 Overview\n\n\n\n\n\nFigure 1.1: Type of vectors"
   },
   {
     "objectID": "vector.html#atomic-vectors",

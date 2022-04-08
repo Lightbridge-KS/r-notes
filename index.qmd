@@ -14,4 +14,4 @@ This is my notes on R programming.
 
 -   [Hands-On Programming with R](https://jjallaire.github.io/hopr/)
 
-Last updated: `r Sys.Date()`
+
