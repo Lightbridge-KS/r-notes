@@ -118,3 +118,10 @@ sum(x)
 # Proportion that are TRUE
 mean(x)
 ```
+
+Deliberate coercion with warning message
+
+```{r}
+as.integer(c("1", "1.5", "a"))
+```
+
