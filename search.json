@@ -4,48 +4,118 @@
     "href": "index.html",
     "title": "R Notes",
     "section": "",
-    "text": "About\n\n\n\nThis is my notes on R programming.\n\n\n\n\n\nAdvanced R Book\nR Manuals\nHands-On Programming with R"
+    "text": "About\n\n\n\nJust my notes related to R programming.\n\n\n\n\nMost of the material in my note came from:\n\nAdvanced R Book\nR Manuals\nHands-On Programming with R"
+  },
+  {
+    "objectID": "r-material.html",
+    "href": "r-material.html",
+    "title": "1  Books & Blog",
+    "section": "",
+    "text": "Big book of R: A wiki of all R resources"
+  },
+  {
+    "objectID": "r-material.html#r-programming",
+    "href": "r-material.html#r-programming",
+    "title": "1  Books & Blog",
+    "section": "1.1 R Programming",
+    "text": "1.1 R Programming\n\nAdvanced R\nHands-On Programming with R\nEfficient R Programming"
+  },
+  {
+    "objectID": "r-material.html#data-science",
+    "href": "r-material.html#data-science",
+    "title": "1  Books & Blog",
+    "section": "1.2 Data Science",
+    "text": "1.2 Data Science\n\n1.2.1 General DS\n\nR4DS\nModern Dive\nStat 545 (Jenny Brian): everything except stats\n\n\n\n1.2.2 DS for Biomedical\n\nDS for Biomed: by Thomas E. Love\nR for Reproducible Scientific Analysis: by sw carpentry\nReproducible Med Research with R: by Peter D.R. Higgins"
+  },
+  {
+    "objectID": "r-material.html#stats",
+    "href": "r-material.html#stats",
+    "title": "1  Books & Blog",
+    "section": "1.3 Stats",
+    "text": "1.3 Stats\n\nIntroduction to Modern Statistics\nISLR BookClub\nMeta-Analysis\nStats Drawing (Allison Horst)"
+  },
+  {
+    "objectID": "r-material.html#machine-learning",
+    "href": "r-material.html#machine-learning",
+    "title": "1  Books & Blog",
+    "section": "1.4 Machine Learning",
+    "text": "1.4 Machine Learning\n\nTidy Modeling with R\nIntroduction to Tidymodels"
+  },
+  {
+    "objectID": "r-material.html#data-viz",
+    "href": "r-material.html#data-viz",
+    "title": "1  Books & Blog",
+    "section": "1.5 Data Viz",
+    "text": "1.5 Data Viz\n\nFundamentals of Data Viz: by Claus O. Wilke"
+  },
+  {
+    "objectID": "r-material.html#r-markdown",
+    "href": "r-material.html#r-markdown",
+    "title": "1  Books & Blog",
+    "section": "1.6 R Markdown",
+    "text": "1.6 R Markdown\n\nR Markdown Definitive Guide\nR Markdown Cookbook\nBookdown"
+  },
+  {
+    "objectID": "r-material.html#shiny",
+    "href": "r-material.html#shiny",
+    "title": "1  Books & Blog",
+    "section": "1.7 Shiny",
+    "text": "1.7 Shiny\n\nMastering Shiny\nJS 4 Shiny\nDS Reactivity App"
+  },
+  {
+    "objectID": "r-material.html#r-shell",
+    "href": "r-material.html#r-shell",
+    "title": "1  Books & Blog",
+    "section": "1.8 R & Shell",
+    "text": "1.8 R & Shell\n\nR & Shell\nCommand Line Basic for R"
+  },
+  {
+    "objectID": "r-material.html#misc",
+    "href": "r-material.html#misc",
+    "title": "1  Books & Blog",
+    "section": "1.9 Misc",
+    "text": "1.9 Misc\n\n1.9.1 Education\n\nExams"
   },
   {
     "objectID": "vector.html",
     "href": "vector.html",
-    "title": "1  Vector",
+    "title": "2  Vector",
     "section": "",
     "text": "Last updated: 2022-04-08"
   },
   {
     "objectID": "vector.html#overview",
     "href": "vector.html#overview",
-    "title": "1  Vector",
-    "section": "1.1 Overview",
-    "text": "1.1 Overview\n\n\n\n\n\nFigure 1.1: Type of vectors"
+    "title": "2  Vector",
+    "section": "2.1 Overview",
+    "text": "2.1 Overview\n\n\n\n\n\nFigure 2.1: Type of vectors"
   },
   {
     "objectID": "vector.html#atomic-vectors",
     "href": "vector.html#atomic-vectors",
-    "title": "1  Vector",
-    "section": "1.2 Atomic Vectors",
-    "text": "1.2 Atomic Vectors\n\nlogical\nnumeric: integer, double\ncharacter\n\n\n1.2.1 Scalar\n\nlgl_var <- c(TRUE, FALSE)\nint_var <- c(1L, 6L, 10L)\ndbl_var <- c(1, 2.5, 4.5)\nchr_var <- c(\"these are\", \"some strings\")\n\n\ntypeof(lgl_var)\n#> [1] \"logical\"\ntypeof(int_var)\n#> [1] \"integer\"\ntypeof(dbl_var)\n#> [1] \"double\"\ntypeof(chr_var)\n#> [1] \"character\"\n\n\n\n1.2.2 Longer Vector\nc() will flattens\n\nc(c(1, 2), c(3, 4))\n#> [1] 1 2 3 4\n\n\n\n1.2.3 Missing Value\nNA will propagate except\n\nNA ^ 0\n#> [1] 1\n\nNA | TRUE\n#> [1] TRUE\n\nNA & FALSE\n#> [1] FALSE\n\nChecking NA\nDon’t use this to check NA\n\nx <- c(NA, 5)\nx == NA\n#> [1] NA NA\n\nUse this to check NA\n\nis.na(x)\n#> [1]  TRUE FALSE\n\nTypes of NA\n\ntypeof(NA_integer_)\n#> [1] \"integer\"\ntypeof(NA_real_)\n#> [1] \"double\"\ntypeof(NA_character_)\n#> [1] \"character\"\n\nThis distinction is usually unimportant because NA will be automatically coerced to the correct type when needed.\n\n\n1.2.4 Testing\nAvoid is.vector(), is.atomic(), and is.numeric(): they don’t test if you have a vector, atomic vector, or numeric vector; you’ll need to carefully read the documentation to figure out what they actually do.\nUse this.\n\nis.logical(T)\n#> [1] TRUE\nis.integer(1L)\n#> [1] TRUE\nis.double(2)\n#> [1] TRUE\nis.character(\"Hi\")\n#> [1] TRUE\n\n\n\n1.2.5 Coercion\nCombining different types of atomic vector they will be coerced in this order\n\n\n\n\n\n\nCoercion\n\n\n\nlogical → integer → double → character\n\n\n\nstr(c(F, 1))\n#>  num [1:2] 0 1\nstr(c(1, \"a\"))\n#>  chr [1:2] \"1\" \"a\"\n\nCoerce Logical to Numeric can be useful\n\nx <- c(FALSE, FALSE, TRUE)\nas.numeric(x)\n#> [1] 0 0 1\n\n# Total number of TRUEs\nsum(x)\n#> [1] 1\n\n# Proportion that are TRUE\nmean(x)\n#> [1] 0.3333333\n\nDeliberate coercion with warning message\n\nas.integer(c(\"1\", \"1.5\", \"a\"))\n#> Warning: NAs introduced by coercion\n#> [1]  1  1 NA"
+    "title": "2  Vector",
+    "section": "2.2 Atomic Vectors",
+    "text": "2.2 Atomic Vectors\n\nlogical\nnumeric: integer, double\ncharacter\n\n\n2.2.1 Scalar\n\nlgl_var <- c(TRUE, FALSE)\nint_var <- c(1L, 6L, 10L)\ndbl_var <- c(1, 2.5, 4.5)\nchr_var <- c(\"these are\", \"some strings\")\n\n\ntypeof(lgl_var)\n#> [1] \"logical\"\ntypeof(int_var)\n#> [1] \"integer\"\ntypeof(dbl_var)\n#> [1] \"double\"\ntypeof(chr_var)\n#> [1] \"character\"\n\n\n\n2.2.2 Longer Vector\nc() will flattens\n\nc(c(1, 2), c(3, 4))\n#> [1] 1 2 3 4\n\n\n\n2.2.3 Missing Value\nNA will propagate except\n\nNA ^ 0\n#> [1] 1\n\nNA | TRUE\n#> [1] TRUE\n\nNA & FALSE\n#> [1] FALSE\n\nChecking NA\nDon’t use this to check NA\n\nx <- c(NA, 5)\nx == NA\n#> [1] NA NA\n\nUse this to check NA\n\nis.na(x)\n#> [1]  TRUE FALSE\n\nTypes of NA\n\ntypeof(NA_integer_)\n#> [1] \"integer\"\ntypeof(NA_real_)\n#> [1] \"double\"\ntypeof(NA_character_)\n#> [1] \"character\"\n\nThis distinction is usually unimportant because NA will be automatically coerced to the correct type when needed.\n\n\n2.2.4 Testing\nAvoid is.vector(), is.atomic(), and is.numeric(): they don’t test if you have a vector, atomic vector, or numeric vector; you’ll need to carefully read the documentation to figure out what they actually do.\nUse this.\n\nis.logical(T)\n#> [1] TRUE\nis.integer(1L)\n#> [1] TRUE\nis.double(2)\n#> [1] TRUE\nis.character(\"Hi\")\n#> [1] TRUE\n\n\n\n2.2.5 Coercion\nCombining different types of atomic vector they will be coerced in this order\n\n\n\n\n\n\nCoercion\n\n\n\nlogical → integer → double → character\n\n\n\nstr(c(F, 1))\n#>  num [1:2] 0 1\nstr(c(1, \"a\"))\n#>  chr [1:2] \"1\" \"a\"\n\nCoerce Logical to Numeric can be useful\n\nx <- c(FALSE, FALSE, TRUE)\nas.numeric(x)\n#> [1] 0 0 1\n\n# Total number of TRUEs\nsum(x)\n#> [1] 1\n\n# Proportion that are TRUE\nmean(x)\n#> [1] 0.3333333\n\nDeliberate coercion with warning message\n\nas.integer(c(\"1\", \"1.5\", \"a\"))\n#> Warning: NAs introduced by coercion\n#> [1]  1  1 NA"
   },
   {
     "objectID": "vector.html#attributes",
     "href": "vector.html#attributes",
-    "title": "1  Vector",
-    "section": "1.3 Attributes",
-    "text": "1.3 Attributes\n\n1.3.1 Set and Get Attributes\nSet & Get specific attributes: attr()\nSet all attributes: structure()\nGet all attributes: attributes()\n\na <- 1:3\nattr(a, \"x\") <- \"abcdef\"\nattr(a, \"x\")\n#> [1] \"abcdef\"\n\n\nattr(a, \"y\") <- 4:6\nstr(attributes(a))\n#> List of 2\n#>  $ x: chr \"abcdef\"\n#>  $ y: int [1:3] 4 5 6\n\n\n# Or equivalently\na <- structure(\n  1:3, \n  x = \"abcdef\",\n  y = 4:6\n)\nstr(attributes(a))\n#> List of 2\n#>  $ x: chr \"abcdef\"\n#>  $ y: int [1:3] 4 5 6\n\nAttributes should generally be thought of as ephemeral.\n\nattributes(a[1])\n#> NULL\nattributes(sum(a))\n#> NULL\n\nThere are only two attributes that are routinely preserved:\n\nnames\ndim\n\nCreate S3 class to preserve other attributes.\n\n\n1.3.2 Names\nYou can name a vector in three ways:\n\n# When creating it: \nx <- c(a = 1, b = 2, c = 3)\n\n# By assigning a character vector to names()\nx <- 1:3\nnames(x) <- c(\"a\", \"b\", \"c\")\n\n# Inline, with setNames():\nx <- setNames(1:3, c(\"a\", \"b\", \"c\"))\n\nRemove names from a vector by using x <- unname(x) or names(x) <- NULL.\n\ny <- c(a = 1, 2)\nnames(y)\n#> [1] \"a\" \"\"\n\ny <- unname(y)\nnames(y)\n#> NULL\n\nmissing names may be either “” or NA_character_. If all names are missing, names() will return NULL.\n\n\n1.3.3 Dimensions\nAdding a dim attribute to a vector allows it to behave like a 2-dimensional matrix or a multi-dimensional array.\nmatrix()\n\n# Two scalar arguments specify row and column sizes\nx <- matrix(1:6, nrow = 2, ncol = 3)\nx\n#>      [,1] [,2] [,3]\n#> [1,]    1    3    5\n#> [2,]    2    4    6\n\narray()\n\n# One vector argument to describe all dimensions\ny <- array(1:12, c(2, 3, 2))\ny\n#> , , 1\n#> \n#>      [,1] [,2] [,3]\n#> [1,]    1    3    5\n#> [2,]    2    4    6\n#> \n#> , , 2\n#> \n#>      [,1] [,2] [,3]\n#> [1,]    7    9   11\n#> [2,]    8   10   12\n\ndim()\n\n# You can also modify an object in place by setting dim()\nz <- 1:6\ndim(z) <- c(3, 2)\nz\n#>      [,1] [,2]\n#> [1,]    1    4\n#> [2,]    2    5\n#> [3,]    3    6\n\nMany of the functions for working with vectors have generalisations for matrices and arrays:\n\n\n\nVector\nMatrix\nArray\n\n\n\n\nnames()\nrownames(), colnames()\ndimnames()\n\n\nlength()\nnrow(), ncol()\ndim()\n\n\nc()\nrbind(), cbind()\nabind::abind()\n\n\n—\nt()\naperm()\n\n\nis.null(dim(x))\nis.matrix()\nis.array()\n\n\n\n1-dimension, but not the same\n\nstr(1:3)                   # 1d vector\n#>  int [1:3] 1 2 3\nstr(matrix(1:3, ncol = 1)) # column vector\n#>  int [1:3, 1] 1 2 3\nstr(matrix(1:3, nrow = 1)) # row vector\n#>  int [1, 1:3] 1 2 3\nstr(array(1:3, 3))         # \"array\" vector\n#>  int [1:3(1d)] 1 2 3"
+    "title": "2  Vector",
+    "section": "2.3 Attributes",
+    "text": "2.3 Attributes\n\n2.3.1 Set and Get Attributes\nSet & Get specific attributes: attr()\nSet all attributes: structure()\nGet all attributes: attributes()\n\na <- 1:3\nattr(a, \"x\") <- \"abcdef\"\nattr(a, \"x\")\n#> [1] \"abcdef\"\n\n\nattr(a, \"y\") <- 4:6\nstr(attributes(a))\n#> List of 2\n#>  $ x: chr \"abcdef\"\n#>  $ y: int [1:3] 4 5 6\n\n\n# Or equivalently\na <- structure(\n  1:3, \n  x = \"abcdef\",\n  y = 4:6\n)\nstr(attributes(a))\n#> List of 2\n#>  $ x: chr \"abcdef\"\n#>  $ y: int [1:3] 4 5 6\n\nAttributes should generally be thought of as ephemeral.\n\nattributes(a[1])\n#> NULL\nattributes(sum(a))\n#> NULL\n\nThere are only two attributes that are routinely preserved:\n\nnames\ndim\n\nCreate S3 class to preserve other attributes.\n\n\n2.3.2 Names\nYou can name a vector in three ways:\n\n# When creating it: \nx <- c(a = 1, b = 2, c = 3)\n\n# By assigning a character vector to names()\nx <- 1:3\nnames(x) <- c(\"a\", \"b\", \"c\")\n\n# Inline, with setNames():\nx <- setNames(1:3, c(\"a\", \"b\", \"c\"))\n\nRemove names from a vector by using x <- unname(x) or names(x) <- NULL.\n\ny <- c(a = 1, 2)\nnames(y)\n#> [1] \"a\" \"\"\n\ny <- unname(y)\nnames(y)\n#> NULL\n\nmissing names may be either “” or NA_character_. If all names are missing, names() will return NULL.\n\n\n2.3.3 Dimensions\nAdding a dim attribute to a vector allows it to behave like a 2-dimensional matrix or a multi-dimensional array.\nmatrix()\n\n# Two scalar arguments specify row and column sizes\nx <- matrix(1:6, nrow = 2, ncol = 3)\nx\n#>      [,1] [,2] [,3]\n#> [1,]    1    3    5\n#> [2,]    2    4    6\n\narray()\n\n# One vector argument to describe all dimensions\ny <- array(1:12, c(2, 3, 2))\ny\n#> , , 1\n#> \n#>      [,1] [,2] [,3]\n#> [1,]    1    3    5\n#> [2,]    2    4    6\n#> \n#> , , 2\n#> \n#>      [,1] [,2] [,3]\n#> [1,]    7    9   11\n#> [2,]    8   10   12\n\ndim()\n\n# You can also modify an object in place by setting dim()\nz <- 1:6\ndim(z) <- c(3, 2)\nz\n#>      [,1] [,2]\n#> [1,]    1    4\n#> [2,]    2    5\n#> [3,]    3    6\n\nMany of the functions for working with vectors have generalisations for matrices and arrays:\n\n\n\nVector\nMatrix\nArray\n\n\n\n\nnames()\nrownames(), colnames()\ndimnames()\n\n\nlength()\nnrow(), ncol()\ndim()\n\n\nc()\nrbind(), cbind()\nabind::abind()\n\n\n—\nt()\naperm()\n\n\nis.null(dim(x))\nis.matrix()\nis.array()\n\n\n\n1-dimension, but not the same\n\nstr(1:3)                   # 1d vector\n#>  int [1:3] 1 2 3\nstr(matrix(1:3, ncol = 1)) # column vector\n#>  int [1:3, 1] 1 2 3\nstr(matrix(1:3, nrow = 1)) # row vector\n#>  int [1, 1:3] 1 2 3\nstr(array(1:3, 3))         # \"array\" vector\n#>  int [1:3(1d)] 1 2 3"
   },
   {
     "objectID": "vector.html#s3-atomic-vectors",
     "href": "vector.html#s3-atomic-vectors",
-    "title": "1  Vector",
-    "section": "1.4 S3 Atomic Vectors",
-    "text": "1.4 S3 Atomic Vectors\n\n1.4.1 Factors\nFactors are built on top of an integer vector, can contain only predefined values.\nHas two attributes\n\nclass: “factor”\nlevels: defines the set of allowed values.\n\n\nx <- factor(c(\"a\", \"b\", \"b\", \"a\"))\nx\n#> [1] a b b a\n#> Levels: a b\ntypeof(x)\n#> [1] \"integer\"\nattributes(x)\n#> $levels\n#> [1] \"a\" \"b\"\n#> \n#> $class\n#> [1] \"factor\"\n\nWhen you tabulate a factor you’ll get counts of all categories, even unobserved ones:\n\n# Character\nsex_char <- c(\"m\", \"m\", \"m\")\ntable(sex_char)\n#> sex_char\n#> m \n#> 3\n# Factor\nsex_factor <- factor(sex_char, levels = c(\"m\", \"f\"))\ntable(sex_factor)\n#> sex_factor\n#> m f \n#> 3 0\n\n\n\n1.4.2 Ordered factors\nThey behave like regular factors, but the order of the levels is meaningful (leveraged by some modelling and visualisation functions)\n\ngrade <- ordered(c(\"b\", \"b\", \"a\", \"c\"), levels = c(\"c\", \"b\", \"a\"))\ngrade\n#> [1] b b a c\n#> Levels: c < b < a\n\n\n\n\n\n\n\nFactor as String\n\n\n\nBest to explicitly convert factors to character vectors if you need string-like behaviour.\n\n\n\n\n1.4.3 Date\nDate vectors are built on top of double vectors. They have class “Date” and no other attributes:\n\ntoday <- Sys.Date()\n\ntypeof(today)\n#> [1] \"double\"\nattributes(today)\n#> $class\n#> [1] \"Date\"\n\nThe value of the double represents the number of days since 1970-01-01.\n\ndate <- as.Date(\"1970-02-01\")\nunclass(date)\n#> [1] 31\n\n\n\n1.4.4 Date-times\nvalue represents the number of seconds since 1970-01-01.\n\nnow_ct <- as.POSIXct(\"2018-08-01 22:00\", tz = \"UTC\")\nnow_ct\n#> [1] \"2018-08-01 22:00:00 UTC\"\n\ntypeof(now_ct)\n#> [1] \"double\"\nattributes(now_ct)\n#> $class\n#> [1] \"POSIXct\" \"POSIXt\" \n#> \n#> $tzone\n#> [1] \"UTC\"\nunclass(now_ct)\n#> [1] 1533160800\n#> attr(,\"tzone\")\n#> [1] \"UTC\"\n\ntzone attribute controls only how the date-time is formatted.\n\nSys.timezone() # My time zone\n#> [1] \"Etc/UTC\"\n\n\nstructure(now_ct, tzone = \"America/New_York\")\n#> [1] \"2018-08-01 18:00:00 EDT\"\nstructure(now_ct, tzone = \"Asia/Bangkok\")\n#> [1] \"2018-08-02 05:00:00 +07\"\n\n\n\n1.4.5 Difftimes\nDifftimes are built on top of doubles, and have a units attribute that determines how the integer should be interpreted\n\none_week_1 <- as.difftime(1, units = \"weeks\")\none_week_1\n#> Time difference of 1 weeks\n\ntypeof(one_week_1)\n#> [1] \"double\"\nattributes(one_week_1)\n#> $class\n#> [1] \"difftime\"\n#> \n#> $units\n#> [1] \"weeks\""
+    "title": "2  Vector",
+    "section": "2.4 S3 Atomic Vectors",
+    "text": "2.4 S3 Atomic Vectors\n\n2.4.1 Factors\nFactors are built on top of an integer vector, can contain only predefined values.\nHas two attributes\n\nclass: “factor”\nlevels: defines the set of allowed values.\n\n\nx <- factor(c(\"a\", \"b\", \"b\", \"a\"))\nx\n#> [1] a b b a\n#> Levels: a b\ntypeof(x)\n#> [1] \"integer\"\nattributes(x)\n#> $levels\n#> [1] \"a\" \"b\"\n#> \n#> $class\n#> [1] \"factor\"\n\nWhen you tabulate a factor you’ll get counts of all categories, even unobserved ones:\n\n# Character\nsex_char <- c(\"m\", \"m\", \"m\")\ntable(sex_char)\n#> sex_char\n#> m \n#> 3\n# Factor\nsex_factor <- factor(sex_char, levels = c(\"m\", \"f\"))\ntable(sex_factor)\n#> sex_factor\n#> m f \n#> 3 0\n\n\n\n2.4.2 Ordered factors\nThey behave like regular factors, but the order of the levels is meaningful (leveraged by some modelling and visualisation functions)\n\ngrade <- ordered(c(\"b\", \"b\", \"a\", \"c\"), levels = c(\"c\", \"b\", \"a\"))\ngrade\n#> [1] b b a c\n#> Levels: c < b < a\n\n\n\n\n\n\n\nFactor as String\n\n\n\nBest to explicitly convert factors to character vectors if you need string-like behaviour.\n\n\n\n\n2.4.3 Date\nDate vectors are built on top of double vectors. They have class “Date” and no other attributes:\n\ntoday <- Sys.Date()\n\ntypeof(today)\n#> [1] \"double\"\nattributes(today)\n#> $class\n#> [1] \"Date\"\n\nThe value of the double represents the number of days since 1970-01-01.\n\ndate <- as.Date(\"1970-02-01\")\nunclass(date)\n#> [1] 31\n\n\n\n2.4.4 Date-times\nvalue represents the number of seconds since 1970-01-01.\n\nnow_ct <- as.POSIXct(\"2018-08-01 22:00\", tz = \"UTC\")\nnow_ct\n#> [1] \"2018-08-01 22:00:00 UTC\"\n\ntypeof(now_ct)\n#> [1] \"double\"\nattributes(now_ct)\n#> $class\n#> [1] \"POSIXct\" \"POSIXt\" \n#> \n#> $tzone\n#> [1] \"UTC\"\nunclass(now_ct)\n#> [1] 1533160800\n#> attr(,\"tzone\")\n#> [1] \"UTC\"\n\ntzone attribute controls only how the date-time is formatted.\n\nSys.timezone() # My time zone\n#> [1] \"Etc/UTC\"\n\n\nstructure(now_ct, tzone = \"America/New_York\")\n#> [1] \"2018-08-01 18:00:00 EDT\"\nstructure(now_ct, tzone = \"Asia/Bangkok\")\n#> [1] \"2018-08-02 05:00:00 +07\"\n\n\n\n2.4.5 Difftimes\nDifftimes are built on top of doubles, and have a units attribute that determines how the integer should be interpreted\n\none_week_1 <- as.difftime(1, units = \"weeks\")\none_week_1\n#> Time difference of 1 weeks\n\ntypeof(one_week_1)\n#> [1] \"double\"\nattributes(one_week_1)\n#> $class\n#> [1] \"difftime\"\n#> \n#> $units\n#> [1] \"weeks\""
   },
   {
     "objectID": "vector.html#lists",
     "href": "vector.html#lists",
-    "title": "1  Vector",
-    "section": "1.5 Lists",
-    "text": "1.5 Lists\nLists are a step up in complexity from atomic vectors: each element can be any type, not just vectors.\n\n1.5.1 Create List\n\nl1 <- list(\n  1:3, \n  \"a\", \n  c(TRUE, FALSE, TRUE), \n  c(2.3, 5.9)\n)\n\ntypeof(l1)\n#> [1] \"list\"\nstr(l1)\n#> List of 4\n#>  $ : int [1:3] 1 2 3\n#>  $ : chr \"a\"\n#>  $ : logi [1:3] TRUE FALSE TRUE\n#>  $ : num [1:2] 2.3 5.9\n\nElements of a list are references, the total size of a list might be smaller than you might expect.\n\nlobstr::obj_size(mtcars)\n#> 7,208 B\n\nl2 <- list(mtcars, mtcars, mtcars, mtcars)\nlobstr::obj_size(l2)\n#> 7,288 B\n\nc() will coerce the vectors to lists before combining them into list\n\nl5 <- c(\n  list(1, 2), \n  c(3, 4)\n  )\n\nstr(l5)\n#> List of 4\n#>  $ : num 1\n#>  $ : num 2\n#>  $ : num 3\n#>  $ : num 4\n\n\n\n1.5.2 As List\n\nlist(1:2)\n#> [[1]]\n#> [1] 1 2\nas.list(1:2)\n#> [[1]]\n#> [1] 1\n#> \n#> [[2]]\n#> [1] 2\n\n\n\n1.5.3 List Matrix\nWith lists, the dimension attribute can be used to create list-matrices or list-arrays:\n\nl <- list(1:3, \"a\", TRUE, 1.0)\ndim(l) <- c(2, 2)\nl\n#>      [,1]      [,2]\n#> [1,] integer,3 TRUE\n#> [2,] \"a\"       1"
+    "title": "2  Vector",
+    "section": "2.5 Lists",
+    "text": "2.5 Lists\nLists are a step up in complexity from atomic vectors: each element can be any type, not just vectors.\n\n2.5.1 Create List\n\nl1 <- list(\n  1:3, \n  \"a\", \n  c(TRUE, FALSE, TRUE), \n  c(2.3, 5.9)\n)\n\ntypeof(l1)\n#> [1] \"list\"\nstr(l1)\n#> List of 4\n#>  $ : int [1:3] 1 2 3\n#>  $ : chr \"a\"\n#>  $ : logi [1:3] TRUE FALSE TRUE\n#>  $ : num [1:2] 2.3 5.9\n\nElements of a list are references, the total size of a list might be smaller than you might expect.\n\nlobstr::obj_size(mtcars)\n#> 7,208 B\n\nl2 <- list(mtcars, mtcars, mtcars, mtcars)\nlobstr::obj_size(l2)\n#> 7,288 B\n\nc() will coerce the vectors to lists before combining them into list\n\nl5 <- c(\n  list(1, 2), \n  c(3, 4)\n  )\n\nstr(l5)\n#> List of 4\n#>  $ : num 1\n#>  $ : num 2\n#>  $ : num 3\n#>  $ : num 4\n\n\n\n2.5.2 As List\n\nlist(1:2)\n#> [[1]]\n#> [1] 1 2\nas.list(1:2)\n#> [[1]]\n#> [1] 1\n#> \n#> [[2]]\n#> [1] 2\n\n\n\n2.5.3 List Matrix\nWith lists, the dimension attribute can be used to create list-matrices or list-arrays:\n\nl <- list(1:3, \"a\", TRUE, 1.0)\ndim(l) <- c(2, 2)\nl\n#>      [,1]      [,2]\n#> [1,] integer,3 TRUE\n#> [2,] \"a\"       1"
   }
 ]
