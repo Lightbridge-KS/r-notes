@@ -4,7 +4,7 @@ project:
 book:
   title: "R Notes"
   author: "Kittipos Sirivongrungson"
-  date: "4/8/2022"
+  date: today
   site-url: https://lightbridge-r-notes.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r-notes
   chapters:
@@ -16,7 +16,9 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: cosmo
+      dark: slate
   #pdf:
     #documentclass: scrreprt
 
