@@ -4,8 +4,4 @@
 
 My personal R notes.
 
-This is a quarto book, deployed via:
-
-- [**Netlify**](https://lightbridge-r-notes.netlify.app) (Manual-build)
-
-- [**Github pages**](https://lightbridge-ks.github.io/r-notes/) (Auto-build)
+This is a quarto book, build by Github action, and deployed via [Netlify](https://r-notes-lightbridge.netlify.app) 
