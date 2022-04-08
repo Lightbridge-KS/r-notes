@@ -6,4 +6,12 @@
 This is my notes on R programming.
 :::
 
+## Main References
+
+-   [Advanced R Book](https://adv-r.hadley.nz/index.html)
+
+-   [R Manuals](https://rstudio.github.io/r-manuals/)
+
+-   [Hands-On Programming with R](https://jjallaire.github.io/hopr/)
+
 Last updated: `r Sys.Date()`
