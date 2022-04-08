@@ -11,7 +11,6 @@ source("_common.R")
 knitr::include_graphics("diagrams/vector.drawio.svg")
 ```
 
-
 ## Atomic Vectors
 
 -   logical
@@ -36,6 +35,8 @@ typeof(chr_var)
 
 ### Longer Vector
 
+`c()` will flattens
+
 ```{r}
 c(c(1, 2), c(3, 4))
 ```
@@ -52,5 +53,68 @@ NA | TRUE
 NA & FALSE
 ```
 
+**Checking `NA`**
 
+Don't use this to check `NA`
 
+```{r}
+x <- c(NA, 5)
+x == NA
+```
+
+Use this to check `NA`
+
+```{r}
+is.na(x)
+```
+
+Types of `NA`
+
+```{r}
+typeof(NA_integer_)
+typeof(NA_real_)
+typeof(NA_character_)
+```
+
+This distinction is usually unimportant because NA will be automatically coerced to the correct type when needed.
+
+### Testing
+
+Avoid [`is.vector()`](https://rdrr.io/r/base/vector.html), [`is.atomic()`](https://rdrr.io/r/base/is.recursive.html), and [`is.numeric()`](https://rdrr.io/r/base/numeric.html): they don't test if you have a vector, atomic vector, or numeric vector; you'll need to carefully read the documentation to figure out what they actually do.
+
+Use this.
+
+```{r}
+is.logical(T)
+is.integer(1L)
+is.double(2)
+is.character("Hi")
+```
+
+### Coercion
+
+Combining different types of atomic vector they will be coerced in this order
+
+::: {.callout-note icon="false"}
+#### Coercion
+
+logical → integer → double → character
+:::
+
+```{r}
+str(c(F, 1))
+str(c(1, "a"))
+```
+
+Coerce Logical to Numeric can be useful
+
+```{r}
+x <- c(FALSE, FALSE, TRUE)
+as.numeric(x)
+
+# Total number of TRUEs
+sum(x)
+
+# Proportion that are TRUE
+mean(x)
+```
