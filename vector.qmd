@@ -295,7 +295,7 @@ Best to explicitly convert factors to character vectors if you need string-like 
 
 ### Date
 
-Date vectors are built on top of double vectors. They have class “Date” and no other attributes:
+Date vectors are built on top of double vectors. They have class "Date" and no other attributes:
 
 ```{r}
 today <- Sys.Date()
@@ -349,7 +349,7 @@ attributes(one_week_1)
 
 ## Lists
 
-Lists are a step up in complexity from atomic vectors: each element can be any type, not just vectors. 
+Lists are a step up in complexity from atomic vectors: each element can be any type, not just vectors.
 
 ### Create List
 
@@ -375,7 +375,6 @@ lobstr::obj_size(l2)
 ```
 
 `c()` will coerce the vectors to lists before combining them into list
-
 
 ```{r}
 l5 <- c(
@@ -403,3 +402,87 @@ dim(l) <- c(2, 2)
 l
 ```
 
+## Data Frame
+
+### `data.frame`
+
+A data frame is a named list of vectors with the same length.
+
+Attributes
+
+-   `names`
+-   `row.names`
+
+```{r}
+df1 <- data.frame(x = 1:3, y = letters[1:3])
+typeof(df1)
+attributes(df1)
+```
+
+-   A data frame has [`rownames()`](https://tibble.tidyverse.org/reference/rownames.html) and [`colnames()`](https://rdrr.io/r/base/colnames.html). The [`names()`](https://rdrr.io/r/base/names.html) of a data frame are the column names.
+
+-   A data frame has [`nrow()`](https://rdrr.io/r/base/nrow.html) rows and [`ncol()`](https://rdrr.io/r/base/nrow.html) columns. The [`length()`](https://rdrr.io/r/base/length.html) of a data frame gives the number of columns.
+
+### `tibble`
+
+> Tibbles are lazy and surly: they do less and complain more.
+
+```{r}
+library(tibble)
+
+df2 <- tibble(x = 1:3, y = letters[1:3])
+typeof(df2)
+attributes(df2)
+```
+
+### Tibble vs Data Frame
+
+-   Tibbles never coerce their input (but recent version of R data frame also not convert string to factor)
+-   Tibbles do not transform non-syntactic names
+-   Tibbles will only recycle vectors of length one.
+-   Tibbles allows you to refer to variables created during construction:
+
+```{r}
+df2 <- tibble(
+  x = 1:3, 
+  y = c("a", "b", "c")
+)
+
+str(df2)
+```
+
+```{r}
+names(data.frame(`1` = 1))
+names(tibble(`1` = 1))
+```
+
+```{r}
+# Useful feature
+tibble(
+  x = 1:3,
+  y = x * 2
+)
+```
+
+### Rowname
+
+::: callout-caution
+#### Warning
+
+Row names are undesirable
+:::
+
+Convert rowname to column by
+
+-   [`rownames_to_column()`](https://tibble.tidyverse.org/reference/rownames.html)
+-   [`as_tibble()`](https://tibble.tidyverse.org/reference/as_tibble.html) with `rownames` argument
+
+```{r}
+df3 <- data.frame(
+  age = c(35, 27, 18),
+  hair = c("blond", "brown", "black"),
+  row.names = c("Bob", "Susan", "Sam")
+)
+
+as_tibble(df3, rownames = "name")
+```
