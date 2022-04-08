@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lightbridge-r-notes.netlify.app/index.html</loc>
-    <lastmod>2022-04-08T08:26:24.577Z</lastmod>
+    <lastmod>2022-04-08T09:53:17.945Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lightbridge-r-notes.netlify.app/r-material.html</loc>
+    <lastmod>2022-04-08T09:53:17.946Z</lastmod>
   </url>
   <url>
     <loc>https://lightbridge-r-notes.netlify.app/vector.html</loc>
-    <lastmod>2022-04-08T08:26:24.582Z</lastmod>
+    <lastmod>2022-04-08T09:53:17.950Z</lastmod>
   </url>
   <url>
     <loc>https://lightbridge-r-notes.netlify.app/references.html</loc>
-    <lastmod>2022-04-08T08:26:24.582Z</lastmod>
+    <lastmod>2022-04-08T09:53:17.950Z</lastmod>
   </url>
 </urlset>

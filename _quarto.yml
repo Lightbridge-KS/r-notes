@@ -9,7 +9,12 @@ book:
   repo-url: https://github.com/Lightbridge-KS/r-notes
   chapters:
     - index.qmd
-    - vector.qmd
+    - part: "Resources"
+      chapters:
+        - r-material.md
+    - part: "Program"
+      chapters:
+        - vector.qmd
     - references.qmd
 
 bibliography: references.bib

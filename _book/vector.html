@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.180">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>R Notes - 1&nbsp; Vector</title>
+  <title>R Notes - 2&nbsp; Vector</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
   <link href="./references.html" rel="next">
-  <link href="./index.html" rel="prev">
+  <link href="./r-material.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -124,7 +124,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vector</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vector</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -156,11 +156,36 @@
   <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Resources</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vector.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vector</span></a>
+  <a href="./r-material.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Books &amp; Blog</span></a>
   </div>
 </li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Program</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vector.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vector</span></a>
+  </div>
+</li>
+    </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
@@ -174,34 +199,34 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#overview" class="nav-link active" data-scroll-target="#overview"> <span class="header-section-number">1.1</span> Overview</a></li>
-<li><a href="#atomic-vectors" class="nav-link" data-scroll-target="#atomic-vectors"> <span class="header-section-number">1.2</span> Atomic Vectors</a>
+<li><a href="#overview" class="nav-link active" data-scroll-target="#overview"> <span class="header-section-number">2.1</span> Overview</a></li>
+<li><a href="#atomic-vectors" class="nav-link" data-scroll-target="#atomic-vectors"> <span class="header-section-number">2.2</span> Atomic Vectors</a>
 <ul class="collapse">
-<li><a href="#scalar" class="nav-link" data-scroll-target="#scalar"> <span class="header-section-number">1.2.1</span> Scalar</a></li>
-<li><a href="#longer-vector" class="nav-link" data-scroll-target="#longer-vector"> <span class="header-section-number">1.2.2</span> Longer Vector</a></li>
-<li><a href="#missing-value" class="nav-link" data-scroll-target="#missing-value"> <span class="header-section-number">1.2.3</span> Missing Value</a></li>
-<li><a href="#testing" class="nav-link" data-scroll-target="#testing"> <span class="header-section-number">1.2.4</span> Testing</a></li>
-<li><a href="#coercion" class="nav-link" data-scroll-target="#coercion"> <span class="header-section-number">1.2.5</span> Coercion</a></li>
+<li><a href="#scalar" class="nav-link" data-scroll-target="#scalar"> <span class="header-section-number">2.2.1</span> Scalar</a></li>
+<li><a href="#longer-vector" class="nav-link" data-scroll-target="#longer-vector"> <span class="header-section-number">2.2.2</span> Longer Vector</a></li>
+<li><a href="#missing-value" class="nav-link" data-scroll-target="#missing-value"> <span class="header-section-number">2.2.3</span> Missing Value</a></li>
+<li><a href="#testing" class="nav-link" data-scroll-target="#testing"> <span class="header-section-number">2.2.4</span> Testing</a></li>
+<li><a href="#coercion" class="nav-link" data-scroll-target="#coercion"> <span class="header-section-number">2.2.5</span> Coercion</a></li>
 </ul></li>
-<li><a href="#attributes" class="nav-link" data-scroll-target="#attributes"> <span class="header-section-number">1.3</span> Attributes</a>
+<li><a href="#attributes" class="nav-link" data-scroll-target="#attributes"> <span class="header-section-number">2.3</span> Attributes</a>
 <ul class="collapse">
-<li><a href="#set-and-get-attributes" class="nav-link" data-scroll-target="#set-and-get-attributes"> <span class="header-section-number">1.3.1</span> Set and Get Attributes</a></li>
-<li><a href="#names" class="nav-link" data-scroll-target="#names"> <span class="header-section-number">1.3.2</span> Names</a></li>
-<li><a href="#dimensions" class="nav-link" data-scroll-target="#dimensions"> <span class="header-section-number">1.3.3</span> Dimensions</a></li>
+<li><a href="#set-and-get-attributes" class="nav-link" data-scroll-target="#set-and-get-attributes"> <span class="header-section-number">2.3.1</span> Set and Get Attributes</a></li>
+<li><a href="#names" class="nav-link" data-scroll-target="#names"> <span class="header-section-number">2.3.2</span> Names</a></li>
+<li><a href="#dimensions" class="nav-link" data-scroll-target="#dimensions"> <span class="header-section-number">2.3.3</span> Dimensions</a></li>
 </ul></li>
-<li><a href="#s3-atomic-vectors" class="nav-link" data-scroll-target="#s3-atomic-vectors"> <span class="header-section-number">1.4</span> S3 Atomic Vectors</a>
+<li><a href="#s3-atomic-vectors" class="nav-link" data-scroll-target="#s3-atomic-vectors"> <span class="header-section-number">2.4</span> S3 Atomic Vectors</a>
 <ul class="collapse">
-<li><a href="#factors" class="nav-link" data-scroll-target="#factors"> <span class="header-section-number">1.4.1</span> Factors</a></li>
-<li><a href="#ordered-factors" class="nav-link" data-scroll-target="#ordered-factors"> <span class="header-section-number">1.4.2</span> Ordered factors</a></li>
-<li><a href="#date" class="nav-link" data-scroll-target="#date"> <span class="header-section-number">1.4.3</span> Date</a></li>
-<li><a href="#date-times" class="nav-link" data-scroll-target="#date-times"> <span class="header-section-number">1.4.4</span> Date-times</a></li>
-<li><a href="#difftimes" class="nav-link" data-scroll-target="#difftimes"> <span class="header-section-number">1.4.5</span> Difftimes</a></li>
+<li><a href="#factors" class="nav-link" data-scroll-target="#factors"> <span class="header-section-number">2.4.1</span> Factors</a></li>
+<li><a href="#ordered-factors" class="nav-link" data-scroll-target="#ordered-factors"> <span class="header-section-number">2.4.2</span> Ordered factors</a></li>
+<li><a href="#date" class="nav-link" data-scroll-target="#date"> <span class="header-section-number">2.4.3</span> Date</a></li>
+<li><a href="#date-times" class="nav-link" data-scroll-target="#date-times"> <span class="header-section-number">2.4.4</span> Date-times</a></li>
+<li><a href="#difftimes" class="nav-link" data-scroll-target="#difftimes"> <span class="header-section-number">2.4.5</span> Difftimes</a></li>
 </ul></li>
-<li><a href="#lists" class="nav-link" data-scroll-target="#lists"> <span class="header-section-number">1.5</span> Lists</a>
+<li><a href="#lists" class="nav-link" data-scroll-target="#lists"> <span class="header-section-number">2.5</span> Lists</a>
 <ul class="collapse">
-<li><a href="#create-list" class="nav-link" data-scroll-target="#create-list"> <span class="header-section-number">1.5.1</span> Create List</a></li>
-<li><a href="#as-list" class="nav-link" data-scroll-target="#as-list"> <span class="header-section-number">1.5.2</span> As List</a></li>
-<li><a href="#list-matrix" class="nav-link" data-scroll-target="#list-matrix"> <span class="header-section-number">1.5.3</span> List Matrix</a></li>
+<li><a href="#create-list" class="nav-link" data-scroll-target="#create-list"> <span class="header-section-number">2.5.1</span> Create List</a></li>
+<li><a href="#as-list" class="nav-link" data-scroll-target="#as-list"> <span class="header-section-number">2.5.2</span> As List</a></li>
+<li><a href="#list-matrix" class="nav-link" data-scroll-target="#list-matrix"> <span class="header-section-number">2.5.3</span> List Matrix</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -210,31 +235,31 @@
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
-<div class="quarto-title"><h1 class="title display-7"><span id="vectors-chap" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vector</span></span></h1></div></header>
+<div class="quarto-title"><h1 class="title display-7"><span id="vectors-chap" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vector</span></span></h1></div></header>
 
 <p>Last updated: 2022-04-08</p>
-<section id="overview" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1</span> Overview</h2>
+<section id="overview" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">2.1</span> Overview</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-vector" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="diagrams/vector.drawio.svg" class="img-fluid figure-img" style="width:80.0%"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 1.1: Type of vectors</figcaption><p></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.1: Type of vectors</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="atomic-vectors" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="atomic-vectors"><span class="header-section-number">1.2</span> Atomic Vectors</h2>
+<section id="atomic-vectors" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="atomic-vectors"><span class="header-section-number">2.2</span> Atomic Vectors</h2>
 <ul>
 <li>logical</li>
 <li>numeric: integer, double</li>
 <li>character</li>
 </ul>
-<section id="scalar" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="scalar"><span class="header-section-number">1.2.1</span> Scalar</h3>
+<section id="scalar" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="scalar"><span class="header-section-number">2.2.1</span> Scalar</h3>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lgl_var <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>int_var <span class="ot">&lt;-</span> <span class="fu">c</span>(1L, 6L, 10L)</span>
@@ -252,16 +277,16 @@
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] "character"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="longer-vector" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="longer-vector"><span class="header-section-number">1.2.2</span> Longer Vector</h3>
+<section id="longer-vector" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="longer-vector"><span class="header-section-number">2.2.2</span> Longer Vector</h3>
 <p><code>c()</code> will flattens</p>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 1 2 3 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="missing-value" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="missing-value"><span class="header-section-number">1.2.3</span> Missing Value</h3>
+<section id="missing-value" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="missing-value"><span class="header-section-number">2.2.3</span> Missing Value</h3>
 <p><code>NA</code> will propagate except</p>
 <div class="cell">
 <div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cn">NA</span> <span class="sc">^</span> <span class="dv">0</span></span>
@@ -296,8 +321,8 @@
 </div>
 <p>This distinction is usually unimportant because NA will be automatically coerced to the correct type when needed.</p>
 </section>
-<section id="testing" class="level3" data-number="1.2.4">
-<h3 data-number="1.2.4" class="anchored" data-anchor-id="testing"><span class="header-section-number">1.2.4</span> Testing</h3>
+<section id="testing" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="testing"><span class="header-section-number">2.2.4</span> Testing</h3>
 <p>Avoid&nbsp;<a href="https://rdrr.io/r/base/vector.html"><code>is.vector()</code></a>,&nbsp;<a href="https://rdrr.io/r/base/is.recursive.html"><code>is.atomic()</code></a>, and&nbsp;<a href="https://rdrr.io/r/base/numeric.html"><code>is.numeric()</code></a>: they don’t test if you have a vector, atomic vector, or numeric vector; you’ll need to carefully read the documentation to figure out what they actually do.</p>
 <p>Use this.</p>
 <div class="cell">
@@ -311,8 +336,8 @@
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="coercion" class="level3" data-number="1.2.5">
-<h3 data-number="1.2.5" class="anchored" data-anchor-id="coercion"><span class="header-section-number">1.2.5</span> Coercion</h3>
+<section id="coercion" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="coercion"><span class="header-section-number">2.2.5</span> Coercion</h3>
 <p>Combining different types of atomic vector they will be coerced in this order</p>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -355,10 +380,10 @@ Coercion
 </div>
 </section>
 </section>
-<section id="attributes" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="attributes"><span class="header-section-number">1.3</span> Attributes</h2>
-<section id="set-and-get-attributes" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="set-and-get-attributes"><span class="header-section-number">1.3.1</span> Set and Get Attributes</h3>
+<section id="attributes" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="attributes"><span class="header-section-number">2.3</span> Attributes</h2>
+<section id="set-and-get-attributes" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="set-and-get-attributes"><span class="header-section-number">2.3.1</span> Set and Get Attributes</h3>
 <p>Set &amp; Get specific attributes: <code>attr()</code></p>
 <p>Set all attributes: <code>structure()</code></p>
 <p>Get all attributes: <code>attributes()</code></p>
@@ -401,8 +426,8 @@ Coercion
 </ul>
 <p>Create S3 class to preserve other attributes.</p>
 </section>
-<section id="names" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="names"><span class="header-section-number">1.3.2</span> Names</h3>
+<section id="names" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="names"><span class="header-section-number">2.3.2</span> Names</h3>
 <p>You can name a vector in three ways:</p>
 <div class="cell">
 <div class="sourceCode" id="cb16"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># When creating it: </span></span>
@@ -427,8 +452,8 @@ Coercion
 </div>
 <p><strong>missing names</strong> may be either “” or <code>NA_character_</code>. If all names are missing, names() will return NULL.</p>
 </section>
-<section id="dimensions" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="dimensions"><span class="header-section-number">1.3.3</span> Dimensions</h3>
+<section id="dimensions" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="dimensions"><span class="header-section-number">2.3.3</span> Dimensions</h3>
 <p>Adding a <code>dim</code> attribute to a vector allows it to behave like a 2-dimensional matrix or a multi-dimensional array.</p>
 <p><strong><code>matrix()</code></strong></p>
 <div class="cell">
@@ -517,10 +542,10 @@ Coercion
 </div>
 </section>
 </section>
-<section id="s3-atomic-vectors" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="s3-atomic-vectors"><span class="header-section-number">1.4</span> S3 Atomic Vectors</h2>
-<section id="factors" class="level3" data-number="1.4.1">
-<h3 data-number="1.4.1" class="anchored" data-anchor-id="factors"><span class="header-section-number">1.4.1</span> Factors</h3>
+<section id="s3-atomic-vectors" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="s3-atomic-vectors"><span class="header-section-number">2.4</span> S3 Atomic Vectors</h2>
+<section id="factors" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="factors"><span class="header-section-number">2.4.1</span> Factors</h3>
 <p>Factors are built on top of an <strong>integer vector</strong>, can contain only predefined values.</p>
 <p>Has two attributes</p>
 <ul>
@@ -557,8 +582,8 @@ Coercion
 <span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3 0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="ordered-factors" class="level3" data-number="1.4.2">
-<h3 data-number="1.4.2" class="anchored" data-anchor-id="ordered-factors"><span class="header-section-number">1.4.2</span> Ordered factors</h3>
+<section id="ordered-factors" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="ordered-factors"><span class="header-section-number">2.4.2</span> Ordered factors</h3>
 <p>They behave like regular factors, but the order of the levels is meaningful (leveraged by some modelling and visualisation functions)</p>
 <div class="cell">
 <div class="sourceCode" id="cb24"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>grade <span class="ot">&lt;-</span> <span class="fu">ordered</span>(<span class="fu">c</span>(<span class="st">"b"</span>, <span class="st">"b"</span>, <span class="st">"a"</span>, <span class="st">"c"</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"c"</span>, <span class="st">"b"</span>, <span class="st">"a"</span>))</span>
@@ -580,8 +605,8 @@ Factor as String
 </div>
 </div>
 </section>
-<section id="date" class="level3" data-number="1.4.3">
-<h3 data-number="1.4.3" class="anchored" data-anchor-id="date"><span class="header-section-number">1.4.3</span> Date</h3>
+<section id="date" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="date"><span class="header-section-number">2.4.3</span> Date</h3>
 <p>Date vectors are built on top of double vectors. They have class “Date” and no other attributes:</p>
 <div class="cell">
 <div class="sourceCode" id="cb25"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>today <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>()</span>
@@ -599,8 +624,8 @@ Factor as String
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 31</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="date-times" class="level3" data-number="1.4.4">
-<h3 data-number="1.4.4" class="anchored" data-anchor-id="date-times"><span class="header-section-number">1.4.4</span> Date-times</h3>
+<section id="date-times" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="date-times"><span class="header-section-number">2.4.4</span> Date-times</h3>
 <p>value represents the number of <strong>seconds</strong> since 1970-01-01.</p>
 <div class="cell">
 <div class="sourceCode" id="cb27"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>now_ct <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="st">"2018-08-01 22:00"</span>, <span class="at">tz =</span> <span class="st">"UTC"</span>)</span>
@@ -632,8 +657,8 @@ Factor as String
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] "2018-08-02 05:00:00 +07"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="difftimes" class="level3" data-number="1.4.5">
-<h3 data-number="1.4.5" class="anchored" data-anchor-id="difftimes"><span class="header-section-number">1.4.5</span> Difftimes</h3>
+<section id="difftimes" class="level3" data-number="2.4.5">
+<h3 data-number="2.4.5" class="anchored" data-anchor-id="difftimes"><span class="header-section-number">2.4.5</span> Difftimes</h3>
 <p>Difftimes are built on top of doubles, and have a <code>units</code> attribute that determines how the integer should be interpreted</p>
 <div class="cell">
 <div class="sourceCode" id="cb30"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>one_week_1 <span class="ot">&lt;-</span> <span class="fu">as.difftime</span>(<span class="dv">1</span>, <span class="at">units =</span> <span class="st">"weeks"</span>)</span>
@@ -651,11 +676,11 @@ Factor as String
 </div>
 </section>
 </section>
-<section id="lists" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="lists"><span class="header-section-number">1.5</span> Lists</h2>
+<section id="lists" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="lists"><span class="header-section-number">2.5</span> Lists</h2>
 <p>Lists are a step up in complexity from atomic vectors: each element can be any type, not just vectors.</p>
-<section id="create-list" class="level3" data-number="1.5.1">
-<h3 data-number="1.5.1" class="anchored" data-anchor-id="create-list"><span class="header-section-number">1.5.1</span> Create List</h3>
+<section id="create-list" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="create-list"><span class="header-section-number">2.5.1</span> Create List</h3>
 <div class="cell">
 <div class="sourceCode" id="cb31"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>l1 <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, </span>
@@ -697,8 +722,8 @@ Factor as String
 <span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ : num 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="as-list" class="level3" data-number="1.5.2">
-<h3 data-number="1.5.2" class="anchored" data-anchor-id="as-list"><span class="header-section-number">1.5.2</span> As List</h3>
+<section id="as-list" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="as-list"><span class="header-section-number">2.5.2</span> As List</h3>
 <div class="cell">
 <div class="sourceCode" id="cb34"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [[1]]</span></span>
@@ -711,8 +736,8 @@ Factor as String
 <span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="list-matrix" class="level3" data-number="1.5.3">
-<h3 data-number="1.5.3" class="anchored" data-anchor-id="list-matrix"><span class="header-section-number">1.5.3</span> List Matrix</h3>
+<section id="list-matrix" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="list-matrix"><span class="header-section-number">2.5.3</span> List Matrix</h3>
 <p>With lists, the dimension attribute can be used to create list-matrices or list-arrays:</p>
 <div class="cell">
 <div class="sourceCode" id="cb35"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="st">"a"</span>, <span class="cn">TRUE</span>, <span class="fl">1.0</span>)</span>
@@ -903,8 +928,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./r-material.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Books &amp; Blog</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
