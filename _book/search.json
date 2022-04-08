@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Notes",
+    "section": "",
+    "text": "About\n\n\n\nThis is my notes on R programming.\n\n\nLast updated: 2022-04-08"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "vector.html",
+    "href": "vector.html",
+    "title": "1  Vector",
+    "section": "",
+    "text": "logical\nnumeric: integer, double\ncharacter\n\n\n\n\nlgl_var <- c(TRUE, FALSE)\nint_var <- c(1L, 6L, 10L)\ndbl_var <- c(1, 2.5, 4.5)\nchr_var <- c(\"these are\", \"some strings\")\n\n\ntypeof(lgl_var)\n#> [1] \"logical\"\ntypeof(int_var)\n#> [1] \"integer\"\ntypeof(dbl_var)\n#> [1] \"double\"\ntypeof(chr_var)\n#> [1] \"character\"\n\n\n\n\n\nc(c(1, 2), c(3, 4))\n#> [1] 1 2 3 4\n\n\n\n\nNA will propagate except\n\nNA ^ 0\n#> [1] 1\n\nNA | TRUE\n#> [1] TRUE\n\nNA & FALSE\n#> [1] FALSE"
+  }
+]

@@ -1,0 +1,46 @@
+# Vector
+
+```{r setup, include=FALSE}
+source("_common.R")
+```
+
+## Atomic Vectors
+
+-   logical
+-   numeric: integer, double
+-   character
+
+### Scalar
+
+```{r vec-atom}
+lgl_var <- c(TRUE, FALSE)
+int_var <- c(1L, 6L, 10L)
+dbl_var <- c(1, 2.5, 4.5)
+chr_var <- c("these are", "some strings")
+```
+
+```{r vec-atom-type}
+typeof(lgl_var)
+typeof(int_var)
+typeof(dbl_var)
+typeof(chr_var)
+```
+
+### Longer Vector
+
+```{r}
+c(c(1, 2), c(3, 4))
+```
+
+### Missing Value
+
+`NA` will propagate except
+
+```{r}
+NA ^ 0
+
+NA | TRUE
+
+NA & FALSE
+```
+
