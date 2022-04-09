@@ -12,6 +12,13 @@ book:
     - part: "Resources"
       chapters:
         - r-material.md
+        - r-dev.md
+        - stats-ml.md
+    - part: "Sharing"
+      chapters:
+        - authoring.md
+        - blog.md
+        - app.md
     - part: "Program"
       chapters:
         - vector.qmd
@@ -24,6 +31,7 @@ format:
     theme: 
       light: cosmo
       dark: slate
+    number-sections: false
   #pdf:
     #documentclass: scrreprt
 
