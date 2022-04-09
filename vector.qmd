@@ -1,6 +1,5 @@
 # Vector {#vectors-chap}
 
-Last updated: `r Sys.Date()`
 
 ```{r setup, include=FALSE}
 source("_common.R")
