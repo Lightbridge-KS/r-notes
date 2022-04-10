@@ -1,8 +1,9 @@
 # Vector {#vectors-chap}
 
-
 ```{r setup, include=FALSE}
-source("_common.R")
+here::i_am("vector.qmd")
+library(here)
+source(here("_common.R"))
 ```
 
 ## Overview
@@ -485,3 +486,40 @@ df3 <- data.frame(
 
 as_tibble(df3, rownames = "name")
 ```
+
+### Subsetting Caveat
+
+`data.frame` allowed partial matching when subsetting with `$`. It can be a source of bug.
+
+```{r}
+df3$a
+# If not found
+df3$x
+```
+
+If you want a single column, recommend using `df[["col"]]`
+
+### List column in Tibble
+
+```{r}
+tibble(
+  x = 1:3, 
+  y = list(1:2, 1:3, 1:4)
+)
+```
+
+## NULL
+
+```{r}
+typeof(NULL)
+length(NULL)
+
+x <- NULL
+attr(x, "y") <- 1
+```
+
+two common uses of `NULL`:
+
+-   To represent an empty vector (a vector of length zero) of arbitrary type.
+
+-   To represent an absent vector. For example, `NULL` is often used as a default function argument, when the argument is optional but the default value requires some computation. (Contrast this with `NA` which is used to indicate that an *element* of a vector is absent.)
