@@ -1,4 +1,4 @@
-# Stats & ML
+# Stats & ML {#sec-stats-ml}
 
 ## Stats
 
@@ -14,6 +14,8 @@
 
 
 - [Meta-Analysis](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
+
+Stats Drawing [Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 
 **Auto Stats**
 
@@ -36,4 +38,7 @@
 - [Introduction to Tidymodels](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
 
 
+**Text Analysis**
 
+- [TidyText mining with R](https://www.tidytextmining.com)
+- [Supervised ML for Text Analysis in R](https://smltar.com)

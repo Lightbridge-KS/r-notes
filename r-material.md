@@ -26,20 +26,9 @@
 
 -   [R for Health DS](https://argoshare.is.ed.ac.uk/healthyr_book/)
 
-## Stats
+## Stats & ML
 
--   [Introduction to Modern Statistics](https://openintro-ims.netlify.app/index.html)
-
--   [ISLR BookClub](https://r4ds.github.io/bookclub-islr/)
-
--   [Meta-Analysis](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
-
--   [Stats Drawing (Allison Horst)](https://github.com/allisonhorst/stats-illustrations)
-
-## Machine Learning
-
--   [Tidy Modeling with R](https://www.tmwr.org)
--   [Introduction to Tidymodels](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
+See @sec-stats-ml
 
 ## Data Viz
 
