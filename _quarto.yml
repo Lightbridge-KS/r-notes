@@ -19,9 +19,6 @@ book:
         - authoring.md
         - blog.md
         - app.md
-    - part: "Program"
-      chapters:
-        - vector.qmd
     - references.qmd
 
 bibliography: references.bib

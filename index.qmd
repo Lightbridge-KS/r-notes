@@ -3,17 +3,12 @@
 ::: callout-note
 ## About
 
-Just my notes related to R programming.
+This is my notes & bookmark for `R` resources.
 :::
 
-## Main References
+::: callout-caution
 
-Most of the material in my note came from:
-
--   [Advanced R Book](https://adv-r.hadley.nz/index.html)
-
--   [R Manuals](https://rstudio.github.io/r-manuals/)
-
--   [Hands-On Programming with R](https://jjallaire.github.io/hopr/)
+The content of this note is a matter of personal preferences and may subject to change.
+:::
 
 
