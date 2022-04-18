@@ -1,9 +1,10 @@
-# Books & Blog
+# Overview
 
 -   [Big book of R](https://www.bigbookofr.com): A wiki of all R resources
 
 ## R Programming
 
+-   [R Manuals](https://rstudio.github.io/r-manuals/)
 -   [Advanced R](https://adv-r.hadley.nz)
 -   [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
 -   [Efficient R Programming](https://csgillespie.github.io/efficientR/introduction.html)
