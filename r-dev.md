@@ -1,6 +1,6 @@
-# R Dev
+# Develop
 
-## R PKG Dev
+## R PKG Development
 
 **Book**
 
@@ -19,19 +19,26 @@
 - [`{testthat}`](https://testthat.r-lib.org)
 - [`{covr}`](https://covr.r-lib.org)
 
+
+**License**
+
+- [Licenses](https://thinkr-open.github.io/licensing-r/)
+
+
 **Continuous Integration**
 
 - [Github action for R](https://github.com/r-lib/actions)
 - [Introduction to Travis CI](https://juliasilge.com/blog/beginners-guide-to-travis/): julia silage
 
-**Releasing PKG**
 
-- [Prep for CRAN](https://github.com/ThinkR-open/prepare-for-cran)
+**Releasing PKG to CRAN**
+
+- [Prep for CRAN](https://github.com/ThinkR-open/prepare-for-cran): collaborative list for thing to check
 - [rOpenSci 📦 Guide](https://devguide.ropensci.org/index.html)
-- [Licenses](https://thinkr-open.github.io/licensing-r/)
+- [GoodPractice](https://github.com/MangoTheCat/goodpractice): R Package for checking package development good practice.
+
 
 After release to CRAN Check PKG Status at [CRAN Says Dashboard](https://r-hub.github.io/cransays/articles/dashboard.html)
-
 
 
 
