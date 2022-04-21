@@ -1,5 +1,11 @@
 # Develop
 
+## Dev Ops
+
+- [What they forgot to teach you about R](https://rstats.wtf)
+- [Happy with Git R](https://happygitwithr.com)
+
+
 ## R PKG Development
 
 **Book**

@@ -13,6 +13,7 @@ If you've never programmed before, see a great introductory book: [Hands-On Prog
 -   [R Manuals](https://rstudio.github.io/r-manuals/)
 -   [Advanced R](https://adv-r.hadley.nz)
 -   [Efficient R Programming](https://csgillespie.github.io/efficientR/introduction.html)
+-   [What they forgot to teach you about R](https://rstats.wtf)
 
 ## Data Science
 
