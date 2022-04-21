@@ -31,11 +31,18 @@ Stats Drawing [Allison Horst](https://github.com/allisonhorst/stats-illustration
 
 ## Models
 
-**Tidymodels**
+**General**
 
-- [**Tidy Modeling with R**](https://www.tmwr.org)
+- [Tidy Modeling with R](https://www.tmwr.org)
   
 - [Introduction to Tidymodels](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
+
+- [Hands-On ML with R](https://bradleyboehmke.github.io/HOML/)
+
+
+**Interactive** 
+
+- [Supervised ML CaseStudy in R](https://supervised-ml-course.netlify.app): by Julia Silge
 
 
 **Text Analysis**
