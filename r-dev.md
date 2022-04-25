@@ -12,9 +12,11 @@
 
 - [R PKG Book](https://r-pkgs.org)
 
-**Usethis**
+**Helper**
 
 - [`{usethis}`](https://usethis.r-lib.org)
+- [`{Checkhelper}`](https://thinkr-open.github.io/checkhelper/)
+
 
 **Website**
 
@@ -67,3 +69,13 @@ After release to CRAN Check PKG Status at [CRAN Says Dashboard](https://r-hub.gi
 - [radiant CLI](https://github.com/randy3k/radian): 21st century R console
   
 - [Command Line Basic for R](https://bash-intro.rsquaredacademy.com)
+
+## Make
+
+- [minimal make](https://kbroman.org/minimal_make/)
+- [make by SW carpentry](https://swcarpentry.github.io/make-novice/)
+
+**R Package**
+
+- [`{makepipe}`](https://kinto-b.github.io/makepipe/)
+- [`{targets}`](https://docs.ropensci.org/targets/index.html)
