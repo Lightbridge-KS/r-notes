@@ -63,6 +63,8 @@ After release to CRAN Check PKG Status at [CRAN Says Dashboard](https://r-hub.gi
 
 - [`{cli}`](https://cli.r-lib.org): Helpers for Developing Command Line Interfaces
 - [`{crayon}`](https://github.com/r-lib/crayon): colord terminal output
+- [withr](https://withr.r-lib.org/index.html): run code with safely and temporarily modified global state
+
 
 ## R and Shell
 
@@ -79,3 +81,11 @@ After release to CRAN Check PKG Status at [CRAN Says Dashboard](https://r-hub.gi
 
 - [`{makepipe}`](https://kinto-b.github.io/makepipe/)
 - [`{targets}`](https://docs.ropensci.org/targets/index.html)
+
+
+## IDE 
+
+**RStudio**
+
+- [RStudio Extension](https://rstudio.github.io/rstudio-extensions/index.html)
+
