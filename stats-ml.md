@@ -8,10 +8,7 @@
 
 - [ISLR BookClub](https://r4ds.github.io/bookclub-islr/)
 
-
-
-
-
+- [Beyond Multiple Linear Regression](https://bookdown.org/roback/bookdown-BeyondMLR/)
 
 - [Meta-Analysis](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
 
