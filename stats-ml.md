@@ -25,6 +25,10 @@ Stats Drawing [Allison Horst](https://github.com/allisonhorst/stats-illustration
 - [R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/): by sw carpentry
 - [Reproducible Med Research with R](https://bookdown.org/pdr_higgins/rmrwr/): by Peter D.R. Higgins
 
+**Cheat Sheet**
+
+- [What stat test should I do?](https://statsandr.com/blog/what-statistical-test-should-i-do/)
+
 
 ## Models
 

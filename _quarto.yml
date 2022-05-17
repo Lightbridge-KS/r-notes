@@ -19,6 +19,7 @@ book:
         - authoring.md
         - blog.md
         - app.md
+        - plots.md
     - references.qmd
 
 bibliography: references.bib
