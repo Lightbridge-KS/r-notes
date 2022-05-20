@@ -33,6 +33,9 @@ If you've never programmed before, see a great introductory book: [Hands-On Prog
 
 -   [R for Health DS](https://argoshare.is.ed.ac.uk/healthyr_book/)
 
+-   [R for Clinical Study Report and Submission](https://r4csr.org)
+
+
 ## Stats & ML
 
 See @sec-stats-ml
