@@ -19,15 +19,21 @@ Stats Drawing [Allison Horst](https://github.com/allisonhorst/stats-illustration
 - [**EasyStats**](https://github.com/easystats)
 - [`{report}`](https://easystats.github.io/report/): from R to menuscript
 
-**Bio Stats**
-
-- [DS for Biomed](https://thomaselove.github.io/432-notes/index.html):  by Thomas E. Love
-- [R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/): by sw carpentry
-- [Reproducible Med Research with R](https://bookdown.org/pdr_higgins/rmrwr/): by Peter D.R. Higgins
-
 **Cheat Sheet**
 
 - [What stat test should I do?](https://statsandr.com/blog/what-statistical-test-should-i-do/)
+
+## Biomedical DS
+
+-   [Reproducible Medical Research with R](https://bookdown.org/pdr_higgins/rmrwr/) (Peter D.R. Higgins, MD, PhD, MSc)
+
+-   [Data Science for the Biomedical Sciences](https://ds4biomed.tech) (Daniel Chen, MPH & Anne Brown, PhD)
+
+-   [Data Science for Biological, Medical and Health Research: Notes for 432](https://thomaselove.github.io/432-notes) (Thomas E. Love, Ph.D.)
+
+-   [R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/) (software carpentry)
+
+-   [R for Health DS](https://argoshare.is.ed.ac.uk/healthyr_book/)
 
 
 ## Models

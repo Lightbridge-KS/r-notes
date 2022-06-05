@@ -9,17 +9,22 @@ book:
   repo-url: https://github.com/Lightbridge-KS/r-notes
   chapters:
     - index.qmd
-    - part: "Resources"
+    - part: "General"
       chapters:
         - r-material.md
         - r-dev.md
+    - part: "Data Science"
+      chapters:
         - stats-ml.md
+        - plots.md
+        - table.md
     - part: "Sharing"
       chapters:
         - authoring.md
         - blog.md
         - app.md
-        - plots.md
+        - api.md
+    - others.md
     - references.qmd
 
 bibliography: references.bib
@@ -27,7 +32,7 @@ bibliography: references.bib
 format:
   html:
     theme: 
-      light: cosmo
+      light: cosmo #zephyr
       dark: slate
     number-sections: false
   #pdf:

@@ -1,14 +1,8 @@
 # Preface {.unnumbered}
 
-::: callout-note
-## About
+::: callout-tip
+## Welcome
 
-This is my notes & bookmark for `R` resources.
+This is my collection of `R` resources.
 :::
-
-::: callout-caution
-
-The content of this note is a matter of personal preferences and may subject to change.
-:::
-
 

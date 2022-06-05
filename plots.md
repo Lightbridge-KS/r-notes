@@ -1,4 +1,5 @@
-# Plotting
+# Plots
+
 
 **Concept**
 
@@ -15,4 +16,5 @@
 
 - [`{highcharter}`](https://jkunst.com/highcharter/index.html)
 - [`{r2d3}`](https://rstudio.github.io/r2d3/index.html)
+
 

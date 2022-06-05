@@ -59,8 +59,3 @@ See [Shiny section](./app.md)
 -   [R & Shell](https://bash-intro.rsquaredacademy.com)
 -   [Command Line Basic for R](https://bash-intro.rsquaredacademy.com)
 
-## Misc
-
-### Education
-
--   [Exams](http://www.r-exams.org)
