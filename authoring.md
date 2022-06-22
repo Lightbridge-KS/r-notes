@@ -24,6 +24,12 @@
 
 - [`{rticle}`](https://pkgs.rstudio.com/rticles/)
 
+
+**Misc**
+
+- **Knitr Engine Tour:** by Christophe Dervieux ([repo](https://github.com/cderv/user2022-knitr-engines), [slide](https://user2022-knitr-engines.netlify.app)) 
+
+
 ## Xaringan
 
 - [**Xaringan Club**](https://xaringan.club)
