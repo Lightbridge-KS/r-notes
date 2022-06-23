@@ -1,6 +1,6 @@
 # My R Notes
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a0a4280c-41d7-4b58-9dc5-b8eac353b2e9/deploy-status)](https://app.netlify.com/sites/lightbridge-r-notes/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a7fb0fe-4881-47ef-b320-54d53395a819/deploy-status)](https://app.netlify.com/sites/r-notes-lightbridge/deploys)
 
 My personal R notes.
 
