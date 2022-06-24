@@ -18,6 +18,8 @@
 
 - [`{blogdown}`](https://pkgs.rstudio.com/blogdown/)
 - [`{pagedown}`](https://pagedown.rbind.io): HTML document for printing
+- [`{hugodown}`](https://github.com/r-lib/hugodown/): Make websites with hugo and RMarkdown
+
 
 
 **Scientific**
