@@ -8,6 +8,10 @@
 - [blogdown new post workflow](https://www.garrickadenbuie.com/blog/blogdown-netlify-new-post-workflow/)
 
 
+## Hugodown
+
+- [`{hugodown}`](https://github.com/r-lib/hugodown/): Make websites with hugo and RMarkdown
+
 ## Blogdown with hugo-apero
 
 
