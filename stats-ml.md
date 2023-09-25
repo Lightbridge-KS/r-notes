@@ -14,6 +14,8 @@
 
 Stats Drawing [Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 
+- [Imputation (MICE)](https://amices.org/mice/)
+
 **Auto Stats**
 
 - [**EasyStats**](https://github.com/easystats)
